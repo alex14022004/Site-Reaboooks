@@ -12,6 +12,8 @@ body{
 .container{
     display: flex;
     justify-content: space-between;
+    margin-left: 5%;
+
 }
 
 .header{
@@ -24,7 +26,7 @@ body{
     color: red;
     font-family: Arial;
     font-size: 40px;
-    margin:20px 60px 20px 20px;
+
 }
 
 .header nav{
@@ -39,7 +41,7 @@ body{
 
 .header nav a:hover{
     color: #ffffff;
-    font-size: 16px;
+    font-size: 17px;
     margin: 5px;
 }
 
@@ -65,28 +67,20 @@ body{
     color: #C0C0C0;
 }
 
-@media(max-width: 370px) {
-    #box2 {
-        display: none;
-    }
-}
 
 main .container{
     background-image: linear-gradient(rgba(0,0,0,.70), rgba(0,0,0,.90)100%),url(/images/medoclassico.png);
     background-size: cover;
-    color: #C0C0C0;
+    color: #ffffff;
     display: flex;
     align-items: center;
     text-align: justify;
-    height: 600px;
+    height: 400px;
 }
 
-main .book{
-    margin: 60px;
-    
-}
 main  h2{
-    font-size: 50px;
+
+    font-size: 40px;
 }
 
 main h3{
@@ -95,11 +89,70 @@ main h3{
 
 main p{
     width: 70%; 
+    min-width: 200px;
 }
 main button{
     width: 200px;
     height: 30px;
-    background-color: #C0C0C0;
     border-radius: 12px;
-    color: #4F4F4F;
+    border: solid 1px; 
+    background-color: rgba(0,0,0,.70);
+    color: rgba(240,230,140);
+    margin: 1px;
 }
+
+main button:hover{
+    background-color: rgba(240,230,140,.70);
+    color: #1c1c1c;
+}
+
+.carrouselimg{
+    height: 300px;
+    width: 200px;
+    max-width: 200px;
+    display: block;
+}
+
+.livros {
+    margin-left: 7%;
+    margin-right: 7%;
+}
+
+.livros h3{
+    font-size: 30px;
+    color:#FFFACD;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+
+.owl-dots {
+    display: none;
+}
+
+.owl-nav button{
+    color: #ffffff !important;
+    border: solid 1px !important;
+    border-color: #363636 !important;
+    width: 100px !important;
+}
+
+footer {
+    margin: 30px;
+    margin-bottom: 10px;
+    color: #C0C0C0;
+    text-align: center;
+}
+
+.linkimg{
+    border-radius: 50%;
+    width: 40px;
+    margin:20px;
+    margin-bottom: 0;
+}  
+
+.linkimg:hover{
+    border-radius: 40%;
+}
+
+
